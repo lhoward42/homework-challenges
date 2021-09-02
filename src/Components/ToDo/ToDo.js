@@ -1,7 +1,9 @@
-import React from 'react';
+import React, {Component} from 'react';
 import {Container} from 'reactstrap';
+import ToDoIndex from '../ToDo/ToDoIndex';
 
-const ToDo = () => {
+class ToDo extends Component {
+  render() {
   return(
     <Container className="App">
      <br />
@@ -24,8 +26,9 @@ const ToDo = () => {
          </li>
        </ul>
        <hr />
+       <ToDoIndex /> 
      </Container>
   );
 };
-
+}
 export default ToDo

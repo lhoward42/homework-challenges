@@ -1,8 +1,10 @@
 import React from 'react';
 import {Container} from 'reactstrap';
+import { DogFetch } from './DogIndex';
  
-const Dogs = () => {
+class Dogs extends React.Component {
 
+  render(){
   return (
     <Container className="App">
       <br />
@@ -18,9 +20,10 @@ const Dogs = () => {
         <li>Make sure to include some good practice error handling</li>
       </ul>
       <hr />
+     <DogFetch />
     </Container>
   );
-
+}
 }
  
 export default Dogs;
